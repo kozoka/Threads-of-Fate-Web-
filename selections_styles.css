@@ -63,6 +63,31 @@ table {
 
 }
 
+
+.textLeft{
+    float:left;
+    margin-left:177px;
+	margin-top:7px;
+	color:#fff;
+
+}
+
+.textCenter{
+    float:left;
+    margin-left:382px;
+	margin-top:9px;
+	color:#fff;
+
+}
+
+.textRight{
+    float:right;
+    margin-right:164px;
+	margin-top:7px;
+	color:#fff;
+
+}
+
 body{
 	background-image:url('images/bg.jpg');
 	background-size: cover;
