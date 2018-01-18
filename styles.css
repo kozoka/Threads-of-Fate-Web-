@@ -52,9 +52,16 @@ table {
 }
 
 
-body{
+body
+{
 	background-image:url('images/bg.jpg');
 	background-size: cover;
+}	
 	
 	
-	
+.card {
+	width: 200px;
+	height:260px;
+	background-color:green;
+}
+

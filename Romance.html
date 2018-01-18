@@ -23,8 +23,21 @@
 	
 <body>
 
-
-
+<script>
+	var columns = []
+	for (i=0; i<4; i++){
+		for (j=0; j<3; j++){
+			var rows = [];
+			leftValue = (i*300).toString + 'px';
+			rightValue = (j*280).toString + 'px';
+			columns[i] = rows;
+			columns[i][j] = document.createElement('div');
+			columns[i][j].setAttribute('class','card');
+			columns[i][j].setAttribute('left', leftValue);
+			columns[i][j].setAttribute('right', rightValue);
+		}
+	}
+</script>
 </body>
 
 </html>

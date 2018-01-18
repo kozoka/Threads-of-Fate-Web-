@@ -1,0 +1,61 @@
+<html>
+<head>
+<meta charset="UTF-8">
+	<!-- stylesheets -->
+	<link rel="stylesheet"  href="styles.css">
+	<link rel="stylesheet"  href="selections_styles.css"
+
+	<!-- jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script src="http://cdn.jquerytools.org/1.2.6/all/jquery.tools.min.js"></script>
+	
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+	
+	<!-- angularjs -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+	
+	<script>
+	var columns = [];
+	for (i=0; i<4; i++){
+		for (j=0; j<3; j++){
+			var rows = [];
+			leftValue = (i*300).toString() + 'px';
+			rightValue = (j*280).toString() + 'px';
+			console.log(leftValue);
+			console.log(rightValue);
+			columns[i] = rows;
+			temp = document.createElement('div');
+			temp.setAttribute('class','card');
+			temp.setAttribute('left', leftValue);
+			temp.setAttribute('right', rightValue);
+			rows.push(temp);
+			console.log(rows[j]);
+		}
+	}
+	alert('hi');
+	console.log('hi');
+	var bob = document.createElement('div');
+	var myText = document.createTextNode('i am a gai');
+	bob.appendChild(myText);
+	console.log('hi');
+	console.log(bob);
+	console.log(myText);
+	</script>
+
+
+</head>
+	
+
+	
+<body>
+
+
+</body>
+
+
+</html>
+
+
