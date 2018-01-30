@@ -9,8 +9,7 @@ function makeCard(i, j){
 }
 	
 function makeLayout(givenRows){
-	var rows = [[0,1,0,1],[1,1,1,1],[0,1,0,1]];
-	console.log(rows);
+	var rows = givenRows;
 	var temp;
 	for (i=0; i<3; i++){
 		var columns = [];
