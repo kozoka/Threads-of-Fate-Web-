@@ -19,10 +19,65 @@
 
 </head>
 	
-
+	<div class="fullscreen-bg">
+		<video class = "fullscreenVideo" width = '100%' min-height='100%' autoplay loop src = "Space-Animation-Background.mp4"></video>
+	</div>
 	
 <body>
+		<!-- Nav bar -->
+			<nav class="navbar navbar-expand-lg navbar-dark" style="position:relative;">
+                <a class="navbar-brand" href="#"><img src ="images/circle3.png" style="height:50px;width:50px;border-radius:50%;" class="img-rounded"></img></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
 
+                <div class="collapse navbar-collapse" id="navbarColor02">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" data-toggle="modal" data-target="#confirmLeaveToStore">Store <span class="sr-only">(current)</span></a>
+                    </li>
+				    <li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Customize</a>
+						<div class="dropdown-menu">
+						  <a class="dropdown-item" href="#">Card Backs</a>
+						  <a class="dropdown-item" href="#">Backgrounds</a>
+						</div>
+				    </li>
+                  </ul>
+                  <div class="form-inline my-2 my-lg-0">
+					<img src ="images/bg.jpg" style="height:50px;width:50px;border-radius:50%;margin-right:10px;" class="img-rounded"></img>
+					<p style="margin-right:40px;color:white;"> 0</p>
+                  </div>
+				  <div class="form-inline my-2 my-lg-0">
+					<img src ="images/bg.jpg" style="height:50px;width:50px;border-radius:50%;margin-right:10px;" class="img-rounded"></img>
+					<p style="margin-right:10px;color:white;"> 0</p>
+                  </div>
+                </div>
+              </nav>
+			  
+			  
+		<!-- Leave to Store Modal -->
+		<div class="modal fade" id="confirmLeaveToStore" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Confirm Navigation</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				  <span aria-hidden="true">&times;</span>
+				</button>
+			  </div>
+			  <div class="modal-body">
+				Are you sure you would like to end this fortune telling session? Your progress will not be saved.
+			  </div>
+			  <div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				<form action="#">
+					<input type="submit" class = "btn btn-primary" value="Proceed to store" />
+				</form>
+			  </div>
+			</div>
+		  </div>
+		</div>
 
 <a href="Emotion.html"><div style= "border:1px solid red; width:200px;height:260px;background-image:url('images/cardback.png');background-size:cover;" class="card cardLeft;">
 </div></a>

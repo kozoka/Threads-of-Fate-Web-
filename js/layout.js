@@ -1,6 +1,6 @@
 function makeCard(i, j){
-	leftValue = (180).toString() + 'px';
-	topValue = (90).toString() + 'px';
+	leftValue = (240).toString() + 'px';
+	topValue = (45).toString() + 'px';
 	var temp = document.createElement('div');
 	temp.setAttribute('class','myCard gameCard');
 	temp.style.left = leftValue;
@@ -27,4 +27,5 @@ function makeLayout(givenRows){
 	}
 	
 }
+
 makeLayout(globalRows);

@@ -79,15 +79,12 @@ body
 	background clip: border box;
 	border: 1px solid rgba(0,0,0,.125);
 	background-image:url('images/cardback.png');
+	background-size:cover;
+	border: 2px solid #004d3d;
 	border-radius:.25rem;
 	transition: all 0.6s ease;
 	transform-style: preserve-3d;
-	opacity:0.75;
-}
-
-
-.myCard:hover {
-	transform: rotateY(180deg);
+	opacity:0.85;
 }
 
 .fullscreen-bg {
@@ -107,3 +104,5 @@ body
 	min-width: 100%;
 	min-height: 100%;
 }
+
+
