@@ -34,15 +34,14 @@
                 <div class="collapse navbar-collapse" id="navbarColor02">
                   <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                      <a class="nav-link" data-toggle="modal" data-target="#confirmLeaveToStore">Store <span class="sr-only">(current)</span></a>
+                      <a class="nav-link" href="store.html">Store <span class="sr-only">(current)</span></a>
                     </li>
-				    <li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Customize</a>
-						<div class="dropdown-menu">
-						  <a class="dropdown-item" href="#">Card Backs</a>
-						  <a class="dropdown-item" href="#">Backgrounds</a>
-						</div>
-				    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" data-toggle="modal" data-target="#cardbackModal">Card Backs <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" data-toggle="modal" data-target="#themesModal">Themes <span class="sr-only">(current)</span></a>
+                    </li>
                   </ul>
                   <div class="form-inline my-2 my-lg-0">
 					<img src ="images/bg.jpg" style="height:50px;width:50px;border-radius:50%;margin-right:10px;" class="img-rounded"></img>
@@ -52,32 +51,71 @@
 					<img src ="images/bg.jpg" style="height:50px;width:50px;border-radius:50%;margin-right:10px;" class="img-rounded"></img>
 					<p style="margin-right:10px;color:white;"> 0</p>
                   </div>
+				  
                 </div>
               </nav>
-			  
-			  
-		<!-- Leave to Store Modal -->
-		<div class="modal fade" id="confirmLeaveToStore" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-		  <div class="modal-dialog" role="document">
-			<div class="modal-content">
-			  <div class="modal-header">
-				<h5 class="modal-title" id="exampleModalLabel">Confirm Navigation</h5>
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-				  <span aria-hidden="true">&times;</span>
-				</button>
-			  </div>
-			  <div class="modal-body">
-				Are you sure you would like to end this fortune telling session? Your progress will not be saved.
-			  </div>
-			  <div class="modal-footer">
-				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-				<form action="#">
-					<input type="submit" class = "btn btn-primary" value="Proceed to store" />
-				</form>
-			  </div>
-			</div>
-		  </div>
-		</div>
+		
+	<!-- customize modal -->
+	
+  <div id="cardbackModal" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog" >
+      <div class="modal-content" style="border: 1px solid #1f1f7a;">
+        <div class="modal-header" style = "background-color: #290066; color:white">
+		  <h4 class="modal-title">Card Backs</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body" style="background-color:#4700b3";>
+          <section>
+            <div class="gallery-box">
+              <div class="wrapper">
+              <ul id="myGallery">
+			  <!--
+                <li class = "pictureActive img-single">
+                  <img src="themes/water3.gif" class="img-rounded small">
+                </li>
+			 -->
+              </ul>
+              </div>
+            </div>
+          </section>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" data-dismiss="modal" id="applyBackground">Apply</button>
+          <button type="button" class="btn btn-danger" id="closeThemes" data-dismiss="modal" >Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div id="themesModal" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog" >
+      <div class="modal-content" style="border: 1px solid #1f1f7a;">
+        <div class="modal-header" style = "background-color: #290066; color:white">
+		  <h4 class="modal-title">Themes</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body" style="background-color:#4700b3";>
+          <section>
+            <div class="gallery-box">
+              <div class="wrapper">
+              <ul id="myGallery">
+			  <!--
+                <li class = "pictureActive img-single">
+                  <img src="themes/water3.gif" class="img-rounded small">
+                </li>
+			 -->
+              </ul>
+              </div>
+            </div>
+          </section>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" data-dismiss="modal" id="applyBackground">Apply</button>
+          <button type="button" class="btn btn-danger" id="closeThemes" data-dismiss="modal" >Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <a href="Emotion.html"><div style= "border:1px solid red; width:200px;height:260px;background-image:url('images/cardback.png');background-size:cover;" class="card cardLeft;">
 </div></a>

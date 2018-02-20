@@ -92,3 +92,13 @@ body{
 	background-image:url('images/bg.jpg');
 	background-size: cover;
 }
+
+li{
+  list-style:none;
+}
+
+.pictureActive{
+  border:2px solid green;
+  border-radius:5px;
+
+}
